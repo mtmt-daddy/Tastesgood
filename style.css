@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("img/light-carpet.png");
+/*	background-color: #eae5be;
+*/}
+
+@keyframes moveY {
+0% {top:0px;}
+50% {top:30px;}
+100% {top:0px;}
+}
+@-ms-keyframes moveY {
+0% {top:0px;}
+50% {	top:15px;}
+100% {top:0px;}
+}
+ 
+@-webkit-keyframes moveY /* Safari and Chrome */
+{
+0% {top:0px;}
+50% {	top:15px;}
+100% {top:0px;}
+}
+ 
+@-moz-keyframes moveY /* Firefox */
+{
+0% {top:0px;}
+50% {	top:15px;}
+100% {top:0px;}
+}
+
+@keyframes moveX {
+0% {left:-15px;}
+100% {left:15px;}
+}
+@-ms-keyframes moveX{
+0% {left:-15px;}
+100% {left:15px;}
+}
+@-webkit-keyframes moveX /* Safari and Chrome */
+{
+0% {left:-15px;}
+100% {left:15px;}
+}
+@-moz-keyframes moveX /* Firefox */
+{
+0% {left:-15px;}
+100% {left:15px;}
+}
+
+#contents{
+	width: 80%;
+	margin: auto;
+}
+
+.btn{
+	width: 80%;
+	margin: auto;
+}
+
+.page-back{
+	background-image: url("img/reload_btn.png");
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 0.5px rgba(0,0,0,0.4);
+	left: 5%;
+	bottom: -10%;
+	position: fixed;
+	z-index: 9999;
+	transition: .5s;
+}
+
+#logo{
+	width: 100%;
+	margin: 5% auto 0 auto;
+	position: relative;
+/*animation: moveY 2s infinite alternate linear , moveX 3s infinite alternate linear;
+-ms-animation: moveY 2s infinite alternate linear , moveX 3s infinite alternate linear;
+-webkit-animation: moveY 2s infinite alternate linear , moveX 3s infinite alternate linear;
+-moz-animation: moveY 2s infinite alternate linear , moveX 3s infinite alternate linear;
+*/}
+
+.item{
+	border: 10px solid white;
+	border-radius: 10px;
+	margin: 5% auto;
+}
+
+.item img{
+	width: 100%;
+	margin: auto;
+	zoom:1.5;
+}
+
+.load {
+width: 60px;
+height: 60px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+	0% {-moz-transform: rotate(0deg);}
+	100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+	0% {-ms-transform: rotate(0deg);}
+	100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+	0% {-o-transform: rotate(0deg);}
+	100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
